@@ -76,6 +76,9 @@ swagger:
   base-path: /**
   base-package: com.nimblecloud.gurm.controller
   exclude-path: /error
-        
+
+flowable:
+  async-executor-activate: false
+  database-schema-update: true
   
     
