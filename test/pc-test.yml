@@ -31,7 +31,6 @@ spring:
       max-open-prepared-statements: 20
       max-pool-prepared-statement-per-connection-size: 20
   jpa:
-    open-in-view: true
     hibernate:
       ddl-auto: update
       naming:
@@ -40,6 +39,8 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL57Dialect
     properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
       show-sql: true
       format-sql: false
       current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
