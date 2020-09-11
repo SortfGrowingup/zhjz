@@ -1,6 +1,7 @@
 server:
   port: 3001
   undertow:
+    max-cookies: 1000
     max-headers: 1048576
     accesslog:
       enabled: true
